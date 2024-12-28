@@ -1,0 +1,53 @@
+
+.mainContainer{
+  margin: 3rem 2rem;
+  padding: 20px 0;
+
+}
+.h2{
+ 
+  color: black;
+ 
+  text-align: center;
+    font-size: 35px;
+    font-weight: 800 ;
+    margin-top: 5rem;
+}
+.mainContainer .container{
+  margin-left: 1px;
+}
+
+
+.mainContainer .container img{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px ;
+  text-align: center;
+
+}
+@media screen and (max-width: 940px){
+  .mainContainer .container img{
+    height: 40px;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;*/
+    margin: 10px ; 
+    padding-left: 20px;
+    /* text-align: center;  */
+  }
+}
+.bss__our{
+  color:transparent;
+  margin-left:43%;
+  margin-bottom: 4rem;
+  padding-bottom: 0 ;
+  background: linear-gradient(150deg, #369ff6,  #03059c); 
+  height: 0.5rem; 
+  align-items: center;
+  width: 10%;
+  border-radius: 20px;
+}
+

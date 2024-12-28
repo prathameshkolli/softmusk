@@ -1,0 +1,76 @@
+section{
+    margin: 10px 40px;
+}
+.our__work h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800 ;
+    margin-top: 5rem;
+}
+
+.section__s{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    /* padding: 1rem ; */
+    width: 100%;
+    /* margin: 20px; */
+
+} 
+.single__counter{
+    /* border-radius: 10px; */
+    width: 90%;
+    background-color:whitesmoke;
+    padding: 15px;
+    transition: .4s ease;
+    box-shadow: 10px 10px 15px lightblue;
+
+
+}
+.single__counter:hover{
+    transform: translateY(5px);
+    background: linear-gradient(200deg, #b1d2ee,  #0104de); 
+}
+.single__counter span{
+    font-size: 3rem ;
+    font-weight: 800;
+    padding: 15px;
+
+}
+.counter__title{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+
+}
+.i__icon{
+    float: right;
+    font-size: 3.4rem;
+    /* padding: 10px 10px 5px 50px; */
+    color: navy;
+
+}
+
+@media screen and (max-width: 940px) {
+
+    .section__s{
+        grid-template-columns: 2fr ;
+        width: 100%;
+        
+
+    }
+    .single__counter{
+        margin-bottom: 30px ;
+    }
+
+}
+.bss{
+    color:transparent;
+    margin-left:44%;
+    margin-bottom: 4rem;
+    padding-bottom: 0 ;
+    background: linear-gradient(150deg, #369ff6,  #03059c); 
+    height: 0.5rem; 
+    align-items: center;
+    width: 10%;
+    border-radius: 20px;
+}

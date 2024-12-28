@@ -1,0 +1,49 @@
+.container .image{
+    margin-top: 40px;
+}
+
+
+.home .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.home .content{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem;
+    margin-left: 0.5 rem;
+    color: white;
+}
+.home .content h1{
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 940px) {
+    .home .content{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+.home .content h1{
+    width: 100%;
+    font-size: 3.7rem;
+    padding: 1rem;
+    /* margin-top: -20px; */
+    margin-left: 70px;
+    
+}
+.home .content h6{
+    margin-left: 70px;
+}
+
+}
+
+.container .row{
+    margin: 2rem 0;
+} 

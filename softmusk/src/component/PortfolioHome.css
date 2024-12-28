@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: "Poppins", sans-serif;
+}
+
+.p_home {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/porfolio.jpg) no-repeat center center/cover;
+}
+
+.p_home .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%; /* Prevent container overflow */
+}
+
+.p_home .content {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem;
+    margin-left: 0.5rem; /* Adjusted spacing */
+    color: white;
+}
+
+.p_home .content h1 {
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 940px) {
+    .p_home .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p_home .content h1 {
+        width: 100%;
+        font-size: 3.7rem;
+        padding: 2rem 3rem;
+    }
+
+    .p_home .content h5 {
+        padding: 0 2rem;
+    }
+}
+
+section {
+    margin: 3rem;
+    overflow-x: hidden; /* Prevent overflow from section elements */
+}
+
+.p_photo {
+    width: 100%;
+    padding-left: 1rem;
+    text-align: center;
+    overflow: hidden; /* Prevent overflow from the image */
+}
+
+.p_photo img {
+    max-width: 100%; /* Ensure the image fits the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Avoid inline-block spacing issues */
+}
+.p__container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.p_container h2 {
+    position: relative;
+    top: 52rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.bss__pp {
+    color: transparent;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    background: linear-gradient(150deg, #2e8bd7, #03059c);
+    height: 0.5rem;
+    align-items: center;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.p_container h5 {
+    padding: 1rem 0;
+    color: rgb(31, 31, 223);
+    font-weight: 600;
+}
+
+.p_container h6 {
+    line-height: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-right: 3rem;
+}
+
+.image {
+    position: absolute;
+    right: 4rem;
+    top: 52rem;
+    filter: invert(100%);
+    width: 250px;
+    height: 250px;
+    margin: -60px 0 0 -60px;
+    -webkit-animation: spin 40s linear infinite;
+    -moz-animation: spin 40s linear infinite;
+    animation: spin 40s linear infinite;
+}
+
+@media screen and (max-width: 940px) {
+    .p__container{
+        flex-direction: column;
+    }
+
+    .p_photo img {
+        height: 60vh;
+    }
+
+   
+
+    .p_container h2 {
+        position: relative;
+        top: -1rem;
+        font-weight: 800;
+        font-size: 2.5rem;
+    }
+
+    .image {
+        display: none; /* Hide the spinning image on smaller screens */
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

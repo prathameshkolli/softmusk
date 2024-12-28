@@ -1,0 +1,45 @@
+.s_home{
+    
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/service.jpg) no-repeat center center/cover;
+   
+}
+.s_home .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.s_home .content{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem;
+    margin-left: 0.5 rem;
+    color: white;
+}
+.s_home .content h1{
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 940px) {
+    .s_home .content{
+        display: flex;
+        flex-direction: column;
+    }
+.s_home .content h1{
+    width: 100%;
+    font-size: 3.7rem;
+    padding: 2rem 3rem;
+} 
+.s_home .content h5{
+
+    padding: 0 2rem;
+}
+
+
+}

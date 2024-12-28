@@ -1,0 +1,67 @@
+section{
+    margin: 3rem 5rem ;
+}
+
+
+.section_s{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    
+
+} 
+.s-single{
+    border-radius: 0 10px 10px 10px;
+    width: 90%;
+    background-color:whitesmoke;
+    padding: 10px;
+    transition: .4s ease;
+    box-shadow: 10px 10px 15px lightblue;
+    text-align: center;
+    margin: 20px;
+    
+}
+.s-single:hover{
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/cool-smoke.jpg') no-repeat  center/cover;
+    color: #fff !important;
+
+}
+.s-single h2{
+    font-size: 30px;
+    padding: 20px;
+    font-weight: 800;
+}
+.tittle__t{
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+.icon__icon{
+    /* color: navy; */
+    font-size: 3rem;
+}
+@media screen and (max-width:940px) {
+    .section{
+        /* height: 100%; */
+        width: 100%;
+    }
+    .section_s{
+        grid-template-columns: 3fr ;
+        width: 100%;
+        
+
+    }
+    .s-single{
+        margin-bottom: 30px ;
+    }
+}
+.service__convert{
+    color:transparent;
+    margin-left:43%;
+    margin-bottom: 20px;
+    padding-bottom: 0 ;
+    background: linear-gradient(150deg, #2e8bd7,  #03059c); 
+    height: 0.5rem; 
+    align-items: center;
+    width: 10%;
+    border-radius: 5px;
+}

@@ -1,0 +1,89 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+}
+
+body {
+	background:url('bg-img.jpg') no-repeat;
+	background-size: cover;
+}
+
+.login-form{
+    width:350px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position:absolute;
+    color:#fff;
+}
+.login-form h1{
+    font-size:40px;
+    text-align:center;
+    text-transform:uppercase;
+    margin:40px 0;
+}
+
+.message{
+   font-size:20px;
+    margin: 10px 0;
+    letter-spacing: 3px;
+    padding-bottom: 5%;
+    
+}
+
+/*.message button{
+    width: 30px;
+    margin-top: 40px;
+    padding: 10px 0;
+    background: #6fd649;
+    color:#fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}*/
+
+
+
+.login-form p{
+    font-size:20px;
+    margin: 15px 0;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.login-form input{
+    letter-spacing: 3px;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    box-shadow:0 12px 20px rgba(0,0,0,.7);
+    font-weight: bold;
+}
+.login-form .button{
+    letter-spacing: 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 50px;
+    width: 50%;
+    border-radius: 5px;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.login-form .button:hover{
+    background-color: rgb(192, 192, 192);
+    box-shadow:0 5px 20px rgba(255, 255, 255, 0.7);
+
+}
+
+#al{
+    color: black;
+    text-decoration: none;
+}
