@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.Shome {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/supportPageBG.jpg) no-repeat center center/cover;
+  font-family: "Poppins", sans-serif;
+  position: relative; /* To position the heading over the image */
+}
+
+.support-heading-overlay {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  position: relative;
+  min-width: 320px;
+  height: 460px;
+  background: linear-gradient(135deg, #369ff6, #03059c);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.card-icon {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.content h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.content h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #369ff6;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+  margin: auto;
+}
+
+.action-button:hover {
+  background: #369ff6;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(54, 159, 246, 0.4);
+}
+
+.download-button {
+  display: inline-block;
+  padding: 8px 20px; /* Reduced size */
+  background: #ff6961; /* Light reddish color */
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  margin: 10px auto 0 auto;
+  font-size: 0.9rem; /* Slightly smaller font */
+}
+
+/* No hover effect for download-button */
+
+@media screen and (max-width: 940px) {
+  .content h2 {
+    font-size: 2.4rem;
+  }
+
+  .content h3 {
+    font-size: 1.4rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 0.8rem;
+  }
+}

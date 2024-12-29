@@ -1,0 +1,201 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f4f8;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Login Page Styling */
+.login-page {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full page height */
+  background: linear-gradient(135deg, #2e8bd7, #03059c); /* Updated theme colors */
+  animation: fadeInBackground 2s ease-in-out;
+  padding-top: 50px; /* Add top padding to reduce space from navbar */
+  padding-bottom: 50px; /* Add bottom padding to reduce space from footer */
+  position: relative;
+}
+
+/* Left Side Image */
+.left-image {
+  flex: 1; /* Takes up available space on the left */
+  background-image: url('https://example.com/your-image.png'); /* Add your PNG image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Login Container - Frosted Glass Effect */
+.login-container {
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+  padding: 20px; /* Reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: scaleUp 0.6s ease-in-out;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  animation: fadeInText 1s ease-in-out;
+}
+
+/* Login Header */
+.login-header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  animation: fadeInText 1s ease-in-out;
+}
+
+/* Login Subheader */
+.login-subheader {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 500;
+  animation: fadeInText 1.5s ease-in-out;
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  animation: fadeInText 2s ease-in-out;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+  opacity: 0;
+  animation: fadeInText 2.5s ease-in-out forwards;
+}
+
+/* Label */
+.input-group label {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.input-group input {
+  padding: 12px;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  background-color: transparent;
+  color: #fff;
+}
+
+/* Transparent Whitish Placeholder */
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Transparent whitish placeholder */
+}
+
+/* Focused Input */
+.input-group input:focus {
+  border-color: #00b3b3;
+  transform: scale(1.05);
+}
+
+/* Submit Button */
+.login-btn {
+  background-color: #2e8bd7; /* Updated theme color */
+  color: #fff;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+/* Hover Effect on Button */
+.login-btn:hover {
+  background-color: #03059c;
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+.login-footer {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.login-footer a {
+  color: #00b3b3;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Adding animation for the background */
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Adding scale-up animation for the login container */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Fade-in animation for text elements */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
