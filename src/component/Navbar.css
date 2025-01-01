@@ -1,178 +1,209 @@
+/* General Navbar Styling */
 .navbar {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(218, 216, 216);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(218, 216, 216);
+}
+
+/* Container for the top section */
+.contain {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(150deg, #369ff6, #03059c);
+  height: 3.4rem;
+  width: 100%;
+}
+
+/* Top left and right section (Contact and Social) */
+.aaa {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Navbar Container (Main Section) */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .container h2 {
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.navbar .container img {
+  width: 3.5rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Nav Menu Styling */
+.navbar .nav-menu {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.navbar li {
+  padding-right: 1.3rem;
+  font-weight: 600;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.navbar .list_item {
+  position: relative;
+}
+
+.navbar .list_item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0px;
+  width: 75%;
+  height: 3px;
+  background: linear-gradient(150deg, #2e8bd7, #03059c);
+  border-radius: 40px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+
+.navbar .list_item:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Hamburger Icon */
+.bar {
+  display: none;
+}
+
+.icon {
+  color: white;
+}
+
+.bar {
+  color: black;
+}
+
+/* Icons Styling */
+.iconk {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.location-icon {
+  color: #af594c;
+}
+
+.phone-icon {
+  color: #ff9800;
+}
+
+.mail-icon {
+  color: #03a9f4;
+}
+
+/* Social Icons Styling */
+.social-icons .icon {
+  font-size: 1.5rem;
+  margin: 0 8px;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.2);
+}
+
+.fb-icon {
+  color: #3b5998;
+}
+
+.twitter-icon {
+  color: #00acee;
+}
+
+.linkedin-icon {
+  color: #0077b5;
+}
+
+/* Media Queries for Smaller Screens */
+@media screen and (max-width: 940px) {
+  .navbar .bar {
+    display: block;
+    font-size: 20px;
   }
-  
-  .contain {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(150deg, #369ff6, #03059c);
-    height: 3.4rem;
-    width: 100%;
-  }
-  
-  .aaa {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .add {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  
-  /* Navbar Container */
-  .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    display: flex;
-    gap: 10px;
-  }
-  
+
   .navbar .container h2 {
-    font-weight: 800;
-    margin-top: 10px;
+    margin-top: 17px;
   }
-  
-  .navbar .container img {
-    width: 3.5rem;
-    height: auto;
-    border-radius: 50%;
-  }
-  
-  /* Nav Menu */
+
   .navbar .nav-menu {
-    display: flex;
-    padding: 0.5rem ;
+    position: fixed; /* Fixed positioning to ensure dropdown is on top */
+    flex-direction: column;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    top: 0;
+    left: -100%;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    transition: 0.5s ease-in;
+    z-index: 9999; /* Ensure the dropdown is on top */
   }
-  
-  .navbar li {
-    padding-right: 1.3rem;
-    font-weight: 600;
-    justify-content: space-between;
-    margin-top: 1rem;
-  }
-  
-  .navbar .list_item {
-    position: relative;
-  }
-  
-  .navbar .list_item::after {
-    content: "";
-    position: absolute;
+
+  .navbar .active {
     left: 0;
-    bottom: -0px;
-    width: 75%;
-    height: 3px;
-    background: linear-gradient(150deg, #2e8bd7, #03059c);
-    border-radius: 40px;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s;
   }
-  
-  .navbar .list_item:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-  }
-  
-  .bar {
-    display: none;
-  }
-  
-  .icon {
+
+  .navbar li {
     color: white;
+    padding: 1rem;
   }
-  
-  .bar {
-    color: black;
+
+  .contain {
+    display: none; /* Hide the top section for smaller screens */
   }
-  
-  /* Icons Styling */
-  .iconk {
-    margin-right: 8px;
-    font-size: 1.2rem;
+}
+
+/* Additional media queries for even smaller screens (Optional for better responsiveness) */
+@media screen and (max-width: 500px) {
+  .navbar .nav-menu {
+    height: 100vh;
+    padding: 0;
   }
-  
-  .location-icon {
-    color: #af594c;
+
+  .navbar .container h2 {
+    font-size: 1.8rem;
   }
-  
-  .phone-icon {
-    color: #ff9800;
+
+  .navbar .logo img {
+    width: 3rem;
   }
-  
-  .mail-icon {
-    color: #03a9f4;
+
+  .navbar li {
+    font-size: 1rem;
+    padding: 1rem;
   }
-  
+
   .social-icons .icon {
-    font-size: 1.5rem;
-    margin: 0 8px;
-    color: rgb(255, 255, 255);
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1.3rem;
   }
-  
-  .social-icons .icon:hover {
-    transform: scale(1.2);
-  }
-  
-  .fb-icon {
-    color: #3b5998;
-  }
-  
-  .twitter-icon {
-    color: #00acee;
-  }
-  
-  .linkedin-icon {
-    color: #0077b5;
-  }
-  
-  /* Media Queries */
-  @media screen and (max-width: 940px) {
-    .navbar .bar {
-      display: block;
-      font-size: 20px;
-    }
-  
-    .navbar .container h2 {
-      margin-top: 17px;
-    }
-  
-    .navbar .nav-menu {
-      position: absolute;
-      flex-direction: column;
-      width: 100%;
-      height: 90vh;
-      top: 50px;
-      left: -100%;
-      align-items: center;
-      justify-content: center;
-      background: whitesmoke;
-      transition: 0.5s ease-in;
-    }
-  
-    .navbar .active {
-      left: 0;
-    }
-  
-    .navbar li {
-      color: white;
-      padding: 1rem;
-    }
-  
-    .contain {
-      display: none;
-    }
-  }
-  
+}

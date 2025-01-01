@@ -12,12 +12,13 @@
 .support-heading-overlay {
   position: absolute;
   top: 50%;
-  left: 15%;
-  transform: translate(-50%, -50%);
+  left: 5%; /* Left-aligned on larger screens */
+  transform: translateY(-50%); /* Vertically centered */
   color: white;
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: left;
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-align: left; /* Left-aligned text on larger screens */
+  padding: 0 1rem; /* Padding for spacing */
 }
 
 * {
@@ -132,6 +133,12 @@
 /* No hover effect for download-button */
 
 @media screen and (max-width: 940px) {
+  .support-heading-overlay {
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+    text-align: center; /* Center text for smaller screens */
+    font-size: 2.4rem;
+  }
   .content h2 {
     font-size: 2.4rem;
   }
