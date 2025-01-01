@@ -1,9 +1,6 @@
 import React from "react";
+import { FiMapPin, FiPhoneCall, FiMail } from "react-icons/fi";
 import "./Contact2.css";
-import { FiMapPin } from "react-icons/fi";
-import { FiPhoneCall } from "react-icons/fi";
-import { FiMail } from "react-icons/fi";
-import { AiOutlineWhatsApp } from "react-icons/ai";
 
 const Contact = () => {
   return (
@@ -11,33 +8,30 @@ const Contact = () => {
       <div className="c-container">
         <div className="row">
           <div className="column">
-            <div className="contact-widget">
-              <div className="contact-widget-item">
-                <div className="text">
-                  <FiMapPin className="contact-icon" />
-                  <h5>Our Address</h5>
-                  <p>
-                    CTS No- 1049/A2, No-86/2, Floor, FS Plaza, Near Mahaveer
-                    Bhavan, Khanapur Rd Tilakwadi, Belgaum, Karnataka 590006
-                  </p>
-                </div>
+            <div className="icon-item">
+              <FiMapPin className="contact-icon address-icon" />
+              <div className="text">
+                <h5>Our Address</h5>
+                <p>
+                  CTS No- 1049/A2, No-86/2, Floor, FS Plaza, Near Mahaveer
+                  Bhavan, Khanapur Rd Tilakwadi, Belgaum, Karnataka 590006
+                </p>
               </div>
+            </div>
 
-              <div className="contact-widget-item">
-                <div className="text">
-                  <FiPhoneCall className="contact-icon" />
-                  <h5>Phone Number</h5>
-                  <AiOutlineWhatsApp className="icon2" />
-                  <p>+91 8971020906 / +91 9591211023</p>
-                </div>
+            <div className="icon-item">
+              <FiPhoneCall className="contact-icon" />
+              <div className="text">
+                <h5>Phone Number</h5>
+                <p>+91 8971020906 / +91 9591211023</p>
               </div>
+            </div>
 
-              <div className="contact-widget-item">
-                <div className="text">
-                  <FiMail className="contact-icon" />
-                  <h5>Email Us</h5>
-                  <p>service@softmusk.com</p>
-                </div>
+            <div className="icon-item">
+              <FiMail className="contact-icon" />
+              <div className="text">
+                <h5>Email Us</h5>
+                <p>service@softmusk.com</p>
               </div>
             </div>
           </div>
@@ -49,7 +43,7 @@ const Contact = () => {
                 <input type="email" placeholder="Email Address" />
                 <textarea placeholder="Your Message"></textarea>
                 <button type="submit" className="site-btn">
-                  Submit Now
+                  SUBMIT NOW
                 </button>
               </form>
             </div>

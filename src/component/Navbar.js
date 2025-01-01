@@ -62,7 +62,7 @@ const Navbar = () => {
         <div className="container">
           <div className="logo">
             <img src={logo} alt="logo" />
-            <h2>Softmusk</h2>
+            <h2>SOFTMUSK</h2>
           </div>
           <ul className={nav ? "nav-menu active" : "nav-menu"}>
             <li className="list_item">
